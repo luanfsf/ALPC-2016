@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+# tentando editar
 # nao funcionou esse programa
 tot_alunos = 0
 N_turma_turma = 0
