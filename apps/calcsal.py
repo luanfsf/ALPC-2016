@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-__author__ = 'Walter'
+
 '''Construir um programa que efetue o calculo do
 salario liquido de um professor. Para fazer este
 programa, voce devera possuir alguns dados, tais
