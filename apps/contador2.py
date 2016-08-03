@@ -7,4 +7,4 @@ while contador <= 10:
   soma = soma + contador
   contador = contador + 1
 print ("FIM")
-print soma
+print "a soma e", soma

@@ -8,6 +8,7 @@ no mes e percentual de desconto do INSS. Em primeiro
 lugar, deve-se estabelecer qual sera o seu salario
 bruto para efetuar o desconto e ter o valor do salario
 liquido.'''
+
 print("Digite o valor da hora aula")
 valhora = float(input())
 print("Digite o numero de horas trabalhadas")
