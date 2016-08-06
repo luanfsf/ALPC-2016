@@ -36,7 +36,7 @@ for contacidade in range (0,5):
     somacarros = somacarros + numveic
     
 print("A cidade ", cidademaiornumero,
-      "tem a maior quantidade de acientes com: ", maiornumacid)
+      "tem a maior quantidade de acidentes com: ", maiornumacid)
 print("A cidade", cidademenornumero,
       "tem a maior qtd de acidentes com: ", menornumacid)
 
