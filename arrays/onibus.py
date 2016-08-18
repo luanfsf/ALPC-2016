@@ -1,5 +1,5 @@
-'''Uma empresa possui ônibus com 48 lugares (24 nas janelas
-e 24 no corredor). Faça um programa que utilize dois
+'''Uma empresa possui onibus com 48 lugares -24 nas janelas
+e 24 no corredor-. Faca um programa que utilize dois
 vetores para controlar as poltronas ocupadas no corredor
 e na janela. Considere que zero representa poltrona
 desocupada e um representa poltrona ocupada.
@@ -12,9 +12,9 @@ CORREDOR   |  0  |  1  |  0  |  0  |  |  0  |  0  |  1  |
            +-- -+- -- +-- -+- -- +-- -+- -- +-- -+- -- +
 Esse programa deve controlar a venda de passagens da
 seguinte maneira:
+O cliente informa se deseja poltrona no corredor ou
 na janela e, depois, o programa deve informar quais
 poltronas estão disponíveis para a venda;
+Quando não existirem poltronas livres no corredor,
 nas janelas ou, ainda, quando o ônibus estiver
 completamente cheio, deve ser mostrada uma mensagem.
-O cliente informa se deseja poltrona no corredor ou
-Quando não existirem poltronas livres no corredor,'''
