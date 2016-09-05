@@ -1,14 +1,5 @@
 #!/usr/bin/env python
 
-'''Construir um programa que efetue o calculo do
-salario liquido de um professor. Para fazer este
-programa, voce devera possuir alguns dados, tais
-como: valor da hora aula, numero de horas trabalhadas
-no mes e percentual de desconto do INSS. Em primeiro
-lugar, deve-se estabelecer qual sera o seu salario
-bruto para efetuar o desconto e ter o valor do salario
-liquido.'''
-
 print("Digite o valor da hora aula")
 valhora = float(input())
 print("Digite o numero de horas trabalhadas")

@@ -1,4 +1,4 @@
-__author__ = 'ana'
+__author__ = 'luan'
 maisalto=0
 maisbaixo=0
 somaaltf=0

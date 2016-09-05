@@ -1,17 +1,16 @@
 #!/usr/bin/env python
 
+print "Digite sua altura"
+altura = float(input())
 
-#5)	Faça um programa que receba a altura e o sexo de uma pessoa 
-#e que calcule e mostre o seu peso ideal, utilizando as seguintes formulas:
-#a.	Para homens: (72.7 * h) – 58
-#b.	Para mulheres: (62.1 * h) – 44.7
+print "Digite seu sexo"
+sexo = raw_input()
 
-
-print ("Digite sua altura")
-altura = float (input())
-
-print ("Digite seu sexo")
-sexo = (input())
-  if sexo == M 
   
-  
+if sexo == "M" or sexo == "m":
+    print "Sexo Masculino..."
+    pesoideal = (72.7 * altura) - 58
+else:
+    print "Sexo Feminino"
+    pesoideal = (62.1 * altura) - 44.7
+print "O seu peso ideal e: ", pesoideal
