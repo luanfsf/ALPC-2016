@@ -11,11 +11,15 @@ Existem apenas dez vendedores e cada vendedor pode vender apenas
 um tipo de peca, isto e, para cada vendedor existe
 apenas um preco.
 
-Calcule e mostre a quantidade total de pecas vendidas por todos os 
-vendedores e para cada vendedor calcule e mostre o valor total da
-venda, isto e, a quantidade de pecas * o preco da peca.'''
+Calcule e mostre a quantidade total de pecas vendidas por todos os vendedores
+e para cada vendedor calcule e mostre o valor total da venda,
+isto e,
+a quantidade de pecas * o preco da peca.
 
-'''
+tambem sera necessario exibir o numero  de atendimentos perdidos 
+e o valor total dos atendimentos perdidos.
+
+
 w, h = 8, 5. 
 Matrix = [[0 for x in range(w)] for y in range(h)] 
 vendedores = [0][0]
