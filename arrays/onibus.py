@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+
+
+
 '''Uma empresa possui onibus com 48 lugares -24 nas janelas
 e 24 no corredor-. Faca um programa que utilize dois
 vetores para controlar as poltronas ocupadas no corredor
@@ -17,4 +21,4 @@ na janela e, depois, o programa deve informar quais
 poltronas estão disponíveis para a venda;
 Quando não existirem poltronas livres no corredor,
 nas janelas ou, ainda, quando o ônibus estiver
-completamente cheio, deve ser mostrada uma mensagem.
+completamente cheio, deve ser mostrada uma mensagem.'''

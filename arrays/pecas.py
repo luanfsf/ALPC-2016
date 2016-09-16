@@ -1,5 +1,20 @@
 #!/usr/bin/env python
 
+for v in range (0,10):
+  
+  print "Digite a quantidade de pecas vendidas"
+  npecas = int(input())
+  vetpecas = [0] * npecas
+  
+  for i in range(npecas):
+    vetpecas[i] = int(input())
+  print "digite o valor da peca"
+  
+  vpeca = float(input())
+
+
+print vetpecas
+
 '''1) Faca um programa que receba a quantidade de pecas
 vendidas por vendedor e armazene essas quantidades em um
 vetor. 
@@ -24,18 +39,3 @@ w, h = 8, 5.
 Matrix = [[0 for x in range(w)] for y in range(h)] 
 vendedores = [0][0]
 '''
-
-for v in range (0,10):
-  
-  print "Digite a quantidade de pecas vendidas"
-  npecas = int(input())
-  vetpecas = [0] * npecas
-  
-  for i in range(npecas):
-    vetpecas[i] = int(input())
-  print "digite o valor da peca"
-  
-  vpeca = float(input())
-
-
-print vetpecas
