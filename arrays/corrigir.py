@@ -26,6 +26,7 @@ for j in range (15):
     print "digite a resposta - A B C D -"
     resposta[h] = input()
     nota = 0
+    # imagino que isso esta errado gabarito[i] talvez deva ser gabarito[j]
     if resposta[h] == gabarito[i]:
       nota = nota + 1
   print "nota do aluno ", aluno[j], nota
