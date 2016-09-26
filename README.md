@@ -2,4 +2,4 @@
 
 * ALPC (algoritmos e programação de computadores) - 2016
 
-> Sobre curso [link] (http://www.univille.edu.br/pt-BR/departamentos/engsoftware/index/596639)
+> Sobre curso, [link] (http://www.univille.edu.br/pt-BR/departamentos/engsoftware/index/596639).
