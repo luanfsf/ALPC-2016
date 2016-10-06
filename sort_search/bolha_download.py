@@ -9,7 +9,7 @@ import random
 #numeros = [random.randrange(1,101,1) for _ in range (100)]
 #sample(range(10000000), 60)
 
-print "digite o numero de numeros aleatorios"
+print ("digite o numero de numeros aleatorios")
 qnumeros = int(input())
 
 #isso aqui ta funcionando mas ainda esta gerando numeros repetidos
@@ -17,10 +17,10 @@ qnumeros = int(input())
 
 numeros = [random.randrange(1,10*qnumeros,1) for _ in range (qnumeros)]
 
-print "desordenados"
+print ("desordenados")
 
-for i in range (len(numeros)):
-  print numeros[i],
+#for i in range (len(numeros)):
+#  print (numeros[i]),
 
 for i in range (len(numeros)):
   for j in range (i+1,len(numeros)):
@@ -28,14 +28,14 @@ for i in range (len(numeros)):
       aux = numeros[i]
       numeros[i] = numeros[j]
       numeros[j] = aux
-print ""      
-print "Ordenados"
+print ("")      
+print ("Ordenando")
 
 # aqui a lista continua tendo os itens repetidos mas so exibe os unicos
 #print set (numeros)
 
 # se numeros repetido forem gerados eles serao exibidos lado a lado
-print numeros
+print (numeros)
 
 #for i in range (len(numeros)):
 #  print numeros[i],
