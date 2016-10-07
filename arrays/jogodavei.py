@@ -9,32 +9,31 @@ coluna = 1
 jogador = 1
 fim = 1
 
-
 while (fim != 0):
   print "digite o local de acordo com a tabela"
   print "    1  2  3"
   print " 1  _  _  _"
   print " 2  _  _  _"
   print " 3  _  _  _"
-
-
-
+  
   ok = 1
-  while (ok =! 0)
+  while (ok != 0):
+    # caso o jogador digite uma posicao ocupada ele continuara nesse loop
     print "Jogador:",jogador
     print "Linha:"
     linha = int(input())
     print "Coluna:"
     coluna = int(input())
     if jogador == 2 and velha[linha-1][coluna-1] != "X" and velha[linha-1][coluna-1] != "O":
-        velha[linha-1][coluna-1] = "O"
-        jogador -= 1
-        ok = 0
+      velha[linha-1][coluna-1] = "O"
+      jogador -= 1 # essa "logica" e pra trocar de usuario
+      ok = 0
     if jogador == 1 and velha[linha-1][coluna-1] != "X" and velha[linha-1][coluna-1] != "O":
-       velha[linha-1][coluna-1] = "X"
-       jogador += 1
-       ok =0
-
+      velha[linha-1][coluna-1] = "X"
+      jogador += 1 # essa "logica" e pra trocar de usuario
+      ok = 0
+      
+  print "\n--------------------------------------"
   for i in range (3):
     print "\n-------------"
     for j in range (3):
