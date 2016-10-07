@@ -1,19 +1,42 @@
 #!/usr/bin/env python
-
-print "Jogo da velha"
-
+print "Jogo da velha!"
+print "X comeca",
 velha = [[" "] * 3 for i in range (3) ]
-
-while True:
+linha = 1
+coluna = 1
+jogador = 1
+fim = 1
+while (fim != 0):
+  print "digite o local de acordo com a tabela"
+  print "    1  2  3"
+  print " 1  _  _  _"
+  print " 2  _  _  _"
+  print " 3  _  _  _"
+  print "Jogador:",jogador
+  print "Linha:"
+  linha = int(input())
+  print "Coluna:"
+  coluna = int(input())
+  
+  if jogador == 2 and velha[linha-1][coluna-1] != "X" and velha[linha-1][coluna-1] != "O":
+    velha[linha-1][coluna-1] = "O"
+    jogador -= 1
+    
+  if jogador == 1 and velha[linha-1][coluna-1] != "X" and velha[linha-1][coluna-1] != "O":
+    velha[linha-1][coluna-1] = "X"
+    jogador += 1
+  
   for i in range (3):
     print "\n-------------"
     for j in range (3):
       print "|", velha[i][j],
-    #print "\n-----------"
+      
     print "|",
   print "\n-------------"
-  #print "\n"
-  lin = int(input("Digite a linha")) - 1
-  col = int(input("Digite a coluna")) - 1
-  
-  if lin jogador 
+
+  if (velha[0][0] == "X" and velha[0][1] == "X" and velha[0][2] == "X") or (velha[1][0] == "X" and velha[1][1] == "X" and velha[1][2] == "X") or (velha[2][0] == "X" and velha[2][1] == "X" and velha[2][2] == "X"):
+    print "X venceu!"
+    fim = 0
+  if (velha[0][0] == "O" and velha[0][1] == "O" and velha[0][2] == "O") or (velha[1][0] == "O" and velha[1][1] == "O" and velha[1][2] == "O") or (velha[2][0] == "O" and velha[2][1] == "O" and velha[2][2] == "O"):
+    print "O venceu!"
+    fim = 0
