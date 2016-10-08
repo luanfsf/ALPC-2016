@@ -33,7 +33,7 @@ while (fim != 0):
       jogador += 1 # essa "logica" e pra trocar de usuario
       ok = 0
       
-  print "\n--------------------------------------"
+  print "\n---------------------------------"
   for i in range (3):
     print "\n-------------"
     for j in range (3):
