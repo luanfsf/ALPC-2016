@@ -42,9 +42,17 @@ while (fim != 0):
     print "|",
   print "\n-------------"
 
-  if (velha[0][0] == "X" and velha[0][1] == "X" and velha[0][2] == "X") or (velha[1][0] == "X" and velha[1][1] == "X" and velha[1][2] == "X") or (velha[2][0] == "X" and velha[2][1] == "X" and velha[2][2] == "X"):
+  if (velha[0][0] == "X" and velha[0][1] == "X" and velha[0][2] == "X") or
+  (velha[1][0] == "X" and velha[1][1] == "X" and velha[1][2] == "X") or
+  (velha[2][0] == "X" and velha[2][1] == "X" and velha[2][2] == "X") or
+  (velha[0][0] == "X" and velha[1][1] == "X" and velha[2][2] == "X") or
+  (velha[0][2] == "X" and velha[1][1] == "X" and velha[2][0] == "X"):
     print "X venceu!"
     fim = 0
-  if (velha[0][0] == "O" and velha[0][1] == "O" and velha[0][2] == "O") or (velha[1][0] == "O" and velha[1][1] == "O" and velha[1][2] == "O") or (velha[2][0] == "O" and velha[2][1] == "O" and velha[2][2] == "O"):
+  if (velha[0][0] == "O" and velha[0][1] == "O" and velha[0][2] == "O") or
+  (velha[1][0] == "O" and velha[1][1] == "O" and velha[1][2] == "O") or
+  (velha[2][0] == "O" and velha[2][1] == "O" and velha[2][2] == "O") or
+  (velha[0][0] == "O" and velha[1][1] == "O" and velha[2][2] == "O") or
+  (velha[0][2] == "O" and velha[1][1] == "O" and velha[2][0] == "O"):
     print "O venceu!"
     fim = 0
