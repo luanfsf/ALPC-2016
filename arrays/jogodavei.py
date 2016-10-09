@@ -19,7 +19,11 @@ while (fim != 0):
   ok = 1
   while (ok != 0):
     # caso o jogador digite uma posicao ocupada ele continuara nesse loop
-    print "Jogador:",jogador
+    if jogador == 1:
+      print "JOGADOR _X_ DIGITE A POSICAO LINHA x COLUNA"
+    if jogador == 2:
+      print "JOGADOR _O_ DIGITE A POSICAO LINHA X COLUNA"
+    # print "Jogador:",jogador
     print "Linha:"
     linha = int(input())
     print "Coluna:"
@@ -34,6 +38,7 @@ while (fim != 0):
       ok = 0
       
   print "\n---------------------------------"
+  print "# JOGO DA VELHA #"
   for i in range (3):
     print "\n-------------"
     for j in range (3):
