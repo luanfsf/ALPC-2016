@@ -2,7 +2,7 @@
 numero = 0
 
 while ( numero < 1 or numero > 40):
-  print ("digite um numero de 1 a 40")
+  print "digite um numero de 1 a 40"
   numero = int(input())
 
 def fibonacci(n):
