@@ -9,6 +9,10 @@ int main(){
     
     while (numero < 1 || numero > 46){
         printf ("digite um numero de 1 a 46: ");
+        /* 46 e o maior numero que C suporta nessa funcao 1836311903
+        o próximo seria  (2971215073), mas ele excede o limite de
+        2^(32-1) que e de(2147483648).
+        */
         numero = GetInt();
     }
     
