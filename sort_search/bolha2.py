@@ -34,7 +34,7 @@ for i in range (len(numerosordem[0])):
       numerosordem[0][j] = aux
 print ""      
 
-print "Ordenados"
+print "Ordenando..."
 
 print numerosordem[0]
 #for i in range (len(numerosordem)):

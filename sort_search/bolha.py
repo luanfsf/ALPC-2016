@@ -14,6 +14,7 @@ qnumeros = int(input())
 # os numeros aleatorios sao entre 10 vezes o numero de numeros aleatorios
 
 numeros = [random.randrange(1,10*qnumeros,1) for _ in range (qnumeros)]
+print len(numeros)
 
 print "desordenados"
 
