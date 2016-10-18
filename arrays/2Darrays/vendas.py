@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+# python 2.7
 vendas = [[0] * 4 for i in range(5)]
 
 for linha in range(5):
