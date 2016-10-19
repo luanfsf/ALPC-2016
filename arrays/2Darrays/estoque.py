@@ -3,32 +3,37 @@
 # python 2.7
 
 array5x3 = [[-1] * 3 for i in range(5)]
-maiorstoqprod2 = 0
-armz2 = 0
-menorestoque = 0
-vendmenor = 0
-contprod = [0] * 3
-contarmaz = [0] * 4
-totcontarmaz = [0.00] * 4
 
-for i in range(3):
+maiorstoqprod2 = 0 # Para o armazenamento temporario do maior estoque do produto 2
+armz2 = 0 # Para o numero de quem tem mais o produto 2
+
+menorestoque = 0 # Para o armazenamento temporario do menor estoque
+vendmenor = 0 # Para o numero do armazem com menos estoque 
+
+contprod = [0] * 3 # Para armazenar a quantidade por tipo de produtos
+contarmaz = [0] * 4 # Para armazenar a quantidade de produtos por armazem
+totcontarmaz = [0.00] * 4 # Para armazenar o total de cada produto vezes o respectivo preco para cada venda
+
+for i in range(3): # repeticao para armazenar o valor dos produtos
+    #array5x3[4][i] = 3.57 #constante para nao ter que digitar cada valor
     while array5x3[4][i] < 0.01 or array5x3[4][i] > 9.99:
       print "Digite o valor do produto %2d:" %(i+1),
       array5x3[4][i] = float(input())
-    
-    #array5x3[4][i] = 3.57 #constante para nao ter que digitar cada valor
 
-for armazem in range(4):
-  for produto in range(3):
+for armazem in range(4): # para 4 armazens
+  for produto in range(3): # para cada armazens faca 3 produtos
+    #array5x3[armazem][produto] = 26 #constante para nao ter que digitar cada valor
     while ( array5x3[armazem][produto] <= 0 or array5x3[armazem][produto] > 999):
       print "Digite a quantidade do produto:", produto + 1, "do armazém", armazem + 1, ":",
       array5x3[armazem][produto] = int(input())
-      #array5x3[armazem][produto] = 26 #constante para nao ter que digitar cada valor
-    contprod[produto] += array5x3[armazem][produto]
-    contarmaz[armazem] += array5x3[armazem][produto]
+      
+    contprod[produto] += array5x3[armazem][produto] # Para armazenar a quantidade por tipo de produtos
+    contarmaz[armazem] += array5x3[armazem][produto] # Para armazenar a quantidade de produtos por armazem
+    
+    # Para armazenar o total de cada produto vezes o respectivo preco para cada armazem
     totcontarmaz[armazem] += array5x3[armazem][produto] * array5x3[4][produto]
     
-    if produto == 1:
+    if produto == 1: # Para a pergunta B
       if array5x3[armazem][produto] > maiorstoqprod2:
         maiorstoqprod2 = array5x3[armazem][produto]
         armz2 = armazem
@@ -57,7 +62,7 @@ print "\n---RESULTADOS------------------------------------"
 print "\nA) Itens por armazém" 
 for i in range(4):
   print "   Armazém", (i+1), ":", contarmaz[i]
-  if i == 0:
+  if i == 0: # Condições para responder a resposta C
     menorestoque = contarmaz[i]
   if contarmaz[i] < menorestoque:
     menorestoque = contarmaz[i]
