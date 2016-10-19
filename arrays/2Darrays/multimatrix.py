@@ -6,19 +6,19 @@ import random
 def multi(matrix, fator):
   return fator * matrix
 
-dimencao = 0
+dimensao = 0
 
-while dimencao < 1 or dimencao > 12 :
-    print "Digite a dimencao da matrix, de 1 a 12"
-    dimencao = int(input())
+while dimensao < 1 or dimensao > 12 :
+    print "Digite a dimensão da matrix, de 1 a 12"
+    dimensao = int(input())
 
-matrix = [[random.randrange(1, 999, 1) for i in range(dimencao)] for j in range(dimencao)]
+matrix = [[random.randrange(1, 999, 1) for i in range(dimensao)] for j in range(dimensao)]
 
-for linha in range(dimencao): # Exibe a grade da matrix
-  for i in range(dimencao):
+for linha in range(dimensao): # Exibe a grade da matrix
+  for i in range(dimensao):
       print "-----",
   print ("-")
-  for coluna in range(dimencao):
+  for coluna in range(dimensao):
     print "|%4d" %matrix[linha][coluna],
     
   print "|",
@@ -26,21 +26,21 @@ for linha in range(dimencao): # Exibe a grade da matrix
   
 fator = 0
 atual = 0
-print "Digite um numero para multiplicar essa matriz entre 1 e 10"
+print "Digite um número para multiplicar essa matriz entre 1 e 10"
 while fator < 1 or fator > 10 :
-    print "Digite a dimencao da matrix, de 1 a 12"
+    print "Digite a dimensão da matrix, de 1 a 12"
     fator = int(input())
 
-for linha in range(dimencao): # Exibe a grade da matrix
-  for i in range(dimencao):
+for linha in range(dimensao): # Exibe a grade da matrix
+  for i in range(dimensao):
       print "-----",
   print ("-")
-  for coluna in range(dimencao):
+  for coluna in range(dimensao):
     atual = matrix[linha][coluna]
     print "|%4d" %multi(atual, fator),
     
   print "|",
   print ""
-for i in range(dimencao):
+for i in range(dimensao):
       print "-----",
 print ("-")

@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 # python 2.7
+import random
 
 array5x3 = [[-1] * 3 for i in range(5)]
 
@@ -17,15 +18,17 @@ totcontarmaz = [0.00] * 4 # Para armazenar o total de cada produto vezes o respe
 for i in range(3): # repeticao para armazenar o valor dos produtos
     #array5x3[4][i] = 3.57 #constante para nao ter que digitar cada valor
     while array5x3[4][i] < 0.01 or array5x3[4][i] > 9.99:
-      print "Digite o valor do produto %2d:" %(i+1),
-      array5x3[4][i] = float(input())
+      #print "Digite o valor do produto %2d:" %(i+1),
+      #array5x3[4][i] = float(input())
+      array5x3[4][i] = random.uniform(5, 10) # random valores float entre 5 e 10
 
 for armazem in range(4): # para 4 armazens
   for produto in range(3): # para cada armazens faca 3 produtos
     #array5x3[armazem][produto] = 26 #constante para nao ter que digitar cada valor
     while ( array5x3[armazem][produto] <= 0 or array5x3[armazem][produto] > 999):
-      print "Digite a quantidade do produto:", produto + 1, "do armazém", armazem + 1, ":",
-      array5x3[armazem][produto] = int(input())
+      #print "Digite a quantidade do produto:", produto + 1, "do armazém", armazem + 1, ":",
+      #array5x3[armazem][produto] = int(input())
+      array5x3[armazem][produto] = random.randrange(1, 100, 1) # quantidades entre 1 e 100
       
     contprod[produto] += array5x3[armazem][produto] # Para armazenar a quantidade por tipo de produtos
     contarmaz[armazem] += array5x3[armazem][produto] # Para armazenar a quantidade de produtos por armazem
@@ -73,9 +76,9 @@ print "\nC) O armazém com menor estoque é o:", vendmenor +1
 
 print "\nD) O custo total de cada produto é:"
 for i in range(3):
-  print "   Produto ",(i+1), ":",  contprod[i] * array5x3[4][i]
+  print "   Produto ",(i+1), ":%0.3f" %( contprod[i] * array5x3[4][i] )
 
 print "\nE) O custo de cada armazém é: "
 for i in range(4):
-  print "   Armazém",(i+1), ":", totcontarmaz[i]
+  print "   Armazém",(i+1), ": %0.3f" %(totcontarmaz[i])
 print "-------------------------------------------------"
