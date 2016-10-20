@@ -47,8 +47,3 @@ for aluno in range(10):
         print "|--------------------------------------|"
         print "|TOT notas baixas-|  %2d  |  %2d  |  %2d  |" %(prova[0], prova[1], prova[2])
 print "|--------------------------------------|"
-
-
-'''
-Ao final do relatório, mostre quantos alunos tiveram menor nota em cada prova.
-'''
