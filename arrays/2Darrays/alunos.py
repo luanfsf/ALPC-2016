@@ -16,6 +16,7 @@ prova = [[0] * 5 for i in range(8)]
 for aluno in range(8):
     for materia in range(5):
         prova[aluno][materia] = random.randrange(0,6, 1)
+        # O que falta ser feito é que o código de cada matéria não deve ser repetido
         # if idadealunos[aluno] >= 18 and idadealunos[aluno] <= 25: for materia in range(5):
         #     if prova[aluno][materia] > 2:
         #         entre18e25 += 1     # para armazenar a quantidade dealunos com idade entre 18 e 25 anos e 
