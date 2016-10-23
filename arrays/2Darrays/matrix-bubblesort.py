@@ -23,7 +23,7 @@ for linha in range(dimensao): # Exibe a grade da matrix
 for i in range(dimensao):
     print "- - -",
 print ("-")
-
+# bastante ineficiente
 for linha in range(dimensao):
     for coluna in range(dimensao):
         for i in range(dimensao):
