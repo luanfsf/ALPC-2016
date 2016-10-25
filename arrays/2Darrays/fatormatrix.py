@@ -12,7 +12,7 @@ matrix = [[random.randrange(1, 999, 1) for i in range(dimensao)] for j in range(
 
 for linha in range(dimensao): # Exibe a grade da matrix
   for i in range(dimensao):
-      print "-----",
+      print "- - -",
   print "-"
   for coluna in range(dimensao):
     print "|%4d" %matrix[linha][coluna],
@@ -20,7 +20,7 @@ for linha in range(dimensao): # Exibe a grade da matrix
   print "|",
   print ""
 for i in range(dimensao):
-    print "-----",
+    print "- - -",
 print "-"
 
 fator = 0
@@ -33,7 +33,7 @@ novamatrix = [[0] * (dimensao * fator) for i in range(dimensao * fator)]
     
 for linha in range(dimensao * fator): # Exibe a grade da matrix
     for i in range(dimensao * fator):
-        print "-----",
+        print "- - -",
     print "-"
     
     for coluna in range(dimensao * fator):
@@ -44,5 +44,5 @@ for linha in range(dimensao * fator): # Exibe a grade da matrix
     print "|",
     print ""
 for i in range(dimensao*  fator):
-    print "-----",
+    print "- - -",
 print "-"

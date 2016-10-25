@@ -33,7 +33,7 @@ for linha in range(dimensao):
                     matrix[linha][coluna] = matrix[i][j]
                     matrix[i][j] = aux
 
-print "Ordenado com bubble sort"
+print "Ordenado com bubble sort - brute force"
 
 for linha in range(dimensao): # Exibe a grade da matrix
     for i in range(dimensao):
