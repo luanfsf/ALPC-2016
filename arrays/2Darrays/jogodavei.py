@@ -20,20 +20,20 @@ while (fim != 0):
   while (ok != 0):
     # caso o jogador digite uma posicao ocupada ele continuara nesse loop
     if jogador == 1:
-      print "JOGADOR _X_ DIGITE A POSICAO LINHA x COLUNA"
+      print "JOGADOR _\033[91mX\033[0m_ DIGITE A POSICAO LINHA x COLUNA"
     if jogador == 2:
-      print "JOGADOR _O_ DIGITE A POSICAO LINHA X COLUNA"
+      print "JOGADOR _\033[94mO\033[0m_ DIGITE A POSICAO LINHA X COLUNA"
     # print "Jogador:",jogador
     print "Linha:"
     linha = int(input())
     print "Coluna:"
     coluna = int(input())
-    if jogador == 2 and velha[linha-1][coluna-1] != "X" and velha[linha-1][coluna-1] != "O":
-      velha[linha-1][coluna-1] = "O"
+    if jogador == 2 and velha[linha-1][coluna-1] != "\033[91mX\033[0m" and velha[linha-1][coluna-1] != "\033[94mO\033[0m":
+      velha[linha-1][coluna-1] = "\033[94mO\033[0m"
       jogador -= 1 # essa "logica" e pra trocar de usuario
       ok = 0
-    if jogador == 1 and velha[linha-1][coluna-1] != "X" and velha[linha-1][coluna-1] != "O":
-      velha[linha-1][coluna-1] = "X"
+    if jogador == 1 and velha[linha-1][coluna-1] != "\033[91mX\033[0m" and velha[linha-1][coluna-1] != "\033[94mO\033[0m":
+      velha[linha-1][coluna-1] = "\033[91mX\033[0m"
       jogador += 1 # essa "logica" e pra trocar de usuario
       ok = 0
       
