@@ -1,8 +1,9 @@
 #!/usr/bin/env python
+#python 2.7
 numero = 0
 
 while ( numero < 1 or numero > 1000):
-  print "digite um numero de 1 a 1000"
+  print ("digite um numero de 1 a 1000")
   numero = int(input())
 
 valores = {}  
@@ -21,4 +22,6 @@ def fibonacci(n):
   return valor
   
 for i in range(1, numero + 1 ):
-  print i, ":", fibonacci(i) 
+  print ( i, ": %i " %(fibonacci(i)) )
+  #FORMATED ON THE RIGHT print i, ": %50i " %(fibonacci(i))
+  #HEXADECIMAL print i, ": %x " % (fibonacci(i))

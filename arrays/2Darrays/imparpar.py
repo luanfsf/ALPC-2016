@@ -34,6 +34,3 @@ for linha in range(dimensao): # Exibe a grade da matrix
 for i in range(dimensao):
     print "\033[94m- - -",
 print ("-")
-
-print "\033[92mTotal de números pares: %3d" %(par)
-print "\033[91mTotal de números ímpares: %3d" %(impar)
