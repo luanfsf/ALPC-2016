@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
-# python 2.7
+# python 3.5
 import random
 
 
@@ -17,10 +17,10 @@ for i in range(12):
         totsem[j] += loja[i][j]
         total += loja[i][j]
 
-print "|--s1----s2----s3----s4-|---vendas por mes-|"
+print ("|--s1----s2----s3----s4-|---vendas por mes-|")
 for linha in range(12):
     for coluna in range(4):
-        print "| %3d" %loja[linha][coluna],
-    print "| %010s | %3d |" %(mes[linha], totmes[linha] ),    
-    print ""
-print "|-%3d---%3d---%3d---%3d-|-----Total->-%4d-|" %(totsem[0], totsem[1], totsem[2], totsem[3], total)
+        print ("| %3d " %loja[linha][coluna], end="")
+    print ("| %010s | %3d |" %(mes[linha], totmes[linha] ), end="")
+    print ("")
+print ("|-%3d---%3d---%3d---%3d-|-----Total->-%4d-|" %(totsem[0], totsem[1], totsem[2], totsem[3], total) )

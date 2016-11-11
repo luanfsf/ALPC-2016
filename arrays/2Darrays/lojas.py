@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
-# python 2.7
+# python 3.5
 import random
 lojas = [[0.00]*5 for i in range(20)]
 
@@ -18,9 +18,9 @@ for produto in range(20):
 
 print ("|-------------------------------------------------|")
 for loja in range(20):
-    print ("|prod. %2d" %(loja +1), end="")
+    print ("|prod. %2d " %(loja +1), end="")
     for produto in range(5):
-        print ("| %5.2f" %(lojas[loja][produto]), end="")
+        print ("| %5.2f " %(lojas[loja][produto]), end="")
     print ("|", end="")
     print ("")
 print ("|-------------------------------------------------|")
