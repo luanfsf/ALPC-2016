@@ -14,9 +14,9 @@ for linha in range(3):
         x = x + 1
     
 for linha in range(3):
-  print "--------------------------"
+  print ("+------------------------+")
   for coluna in range(5):
-    print "|", "%2d" % array3x5[linha][coluna],
-  print "|",
-  print ""
-print "--------------------------", " Existem %2d numero(s) entre 15 e 20 inclusive, nessa matriz" %x
+    print ("|", "%2d " % array3x5[linha][coluna], end="")
+  print ("|", end="")
+  print ("")
+print ("+------------------------/ Existem %2d numero(s) entre 15 e 20 inclusive, nessa matriz" %x )

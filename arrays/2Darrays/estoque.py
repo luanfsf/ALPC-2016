@@ -41,44 +41,44 @@ for armazem in range(4): # para 4 armazens
         maiorstoqprod2 = array5x3[armazem][produto]
         armz2 = armazem
 
-print "\n|------------------------------|"
+print ("\n+------------------------------+")
 for armazem in range(5):
   if armazem == 0:
-    print "|-prod1--prod2--prod3|         |"
+    print ("|-prod1--prod2--prod3|         |")
   elif armazem == 4:
-    print "|_valor dos produtos_|         |"
+    print ("|_valor dos produtos_|         |")
   else:
-    print "|--------------------|         |"
+    print ("|--------------------|         |")
   for produto in range(3):
     if armazem == 4:
-      print "|", "%0.2f" %array5x3[armazem][produto],
+      print ("|", "%0.2f " %array5x3[armazem][produto], end="")
     else:
-      print "|", "%4d" %array5x3[armazem][produto],
+      print ("|", "%4d " %array5x3[armazem][produto], end="")
   if armazem != 4:
-    print "|>Armz:", armazem+1, "|",
+    print ("|>Armz:", armazem+1, "|", end="")
   else:
-    print "|         |",
-  print ""
-print "|------------------------------|"
+    print ("|         |", end="")
+  print ("")
+print ("+------------------------------+")
 
-print "\n---RESULTADOS------------------------------------"
-print "\nA) Itens por armazém" 
+print ("\n---RESULTADOS------------------------------------")
+print ("\nA) Itens por armazém")
 for i in range(4):
-  print "   Armazém", (i+1), ":", contarmaz[i]
+  print ("   Armazém", (i+1), ":", contarmaz[i])
   if i == 0: # Condições para responder a resposta C
     menorestoque = contarmaz[i]
   if contarmaz[i] < menorestoque:
     menorestoque = contarmaz[i]
     vendmenor = i
   
-print "\nB) O maior estoque do produto2 é do armazém:", armz2 +1
-print "\nC) O armazém com menor estoque é o:", vendmenor +1
+print ("\nB) O maior estoque do produto2 é do armazém:", armz2 +1)
+print ("\nC) O armazém com menor estoque é o:", vendmenor +1 )
 
-print "\nD) O custo total de cada produto é:"
+print ("\nD) O custo total de cada produto é:")
 for i in range(3):
-  print "   Produto ",(i+1), ":%0.3f" %( contprod[i] * array5x3[4][i] )
+  print ("   Produto ",(i+1), ":%0.3f" %( contprod[i] * array5x3[4][i] ) )
 
-print "\nE) O custo de cada armazém é: "
+print ("\nE) O custo de cada armazém é: ")
 for i in range(4):
-  print "   Armazém",(i+1), ": %0.3f" %(totcontarmaz[i])
-print "-------------------------------------------------"
+  print ("   Armazém",(i+1), ": %0.3f" %(totcontarmaz[i]) )
+print ("-------------------------------------------------")

@@ -1,8 +1,12 @@
 #!/usr/bin/env python
+# encoding: utf-8
+# python 3.5
+
+# Melhorar com funçõs
 
 velha = [[" "] * 3 for i in range (3) ]
-print "Jogo da velha!"
-print "X comeca",
+print ("Jogo da velha!")
+print ("X comeca", end="")
 
 linha = 1
 coluna = 1
@@ -10,23 +14,23 @@ jogador = 1
 fim = 1
 
 while (fim != 0):
-  print "digite o local de acordo com a tabela"
-  print "    1  2  3"
-  print " 1  _  _  _"
-  print " 2  _  _  _"
-  print " 3  _  _  _"
+  print ("digite o local de acordo com a tabela")
+  print ("    1  2  3")
+  print (" 1  _  _  _")
+  print (" 2  _  _  _")
+  print (" 3  _  _  _")
   
   ok = 1
   while (ok != 0):
     # caso o jogador digite uma posicao ocupada ele continuara nesse loop
     if jogador == 1:
-      print "JOGADOR _\033[91mX\033[0m_ DIGITE A POSICAO LINHA x COLUNA"
+      print ("JOGADOR _\033[91mX\033[0m_ DIGITE A POSICAO LINHA x COLUNA")
     if jogador == 2:
-      print "JOGADOR _\033[94mO\033[0m_ DIGITE A POSICAO LINHA X COLUNA"
+      print ("JOGADOR _\033[94mO\033[0m_ DIGITE A POSICAO LINHA X COLUNA")
     # print "Jogador:",jogador
-    print "Linha:"
+    print ("Linha:")
     linha = int(input())
-    print "Coluna:"
+    print ("Coluna:")
     coluna = int(input())
     if jogador == 2 and velha[linha-1][coluna-1] != "\033[91mX\033[0m" and velha[linha-1][coluna-1] != "\033[94mO\033[0m":
       velha[linha-1][coluna-1] = "\033[94mO\033[0m"
@@ -37,19 +41,19 @@ while (fim != 0):
       jogador += 1 # essa "logica" e pra trocar de usuario
       ok = 0
       
-  print "\n---------------------------------"
-  print "# JOGO DA VELHA #"
+  print ("\n---------------------------------")
+  print ("# JOGO DA VELHA #")
   for i in range (3):
-    print "\n-------------"
+    print ("\n-------------")
     for j in range (3):
-      print "|", velha[i][j],
+      print ("|", velha[i][j], end=" ")
 
-    print "|",
-  print "\n-------------"
+    print ("|", end="")
+  print ("\n-------------")
 
   if (velha[0][0] == "X" and velha[0][1] == "X" and velha[0][2] == "X") or (velha[1][0] == "X" and velha[1][1] == "X" and velha[1][2] == "X") or (velha[2][0] == "X" and velha[2][1] == "X" and velha[2][2] == "X") or (velha[0][0] == "X" and velha[1][1] == "X" and velha[2][2] == "X") or (velha[0][2] == "X" and velha[1][1] == "X" and velha[2][0] == "X"):
-    print "X venceu!"
+    print ("X venceu!")
     fim = 0
   if (velha[0][0] == "O" and velha[0][1] == "O" and velha[0][2] == "O") or (velha[1][0] == "O" and velha[1][1] == "O" and velha[1][2] == "O") or (velha[2][0] == "O" and velha[2][1] == "O" and velha[2][2] == "O") or (velha[0][0] == "O" and velha[1][1] == "O" and velha[2][2] == "O") or (velha[0][2] == "O" and velha[1][1] == "O" and velha[2][0] == "O"):
-    print "O venceu!"
+    print ("O venceu!")
     fim = 0

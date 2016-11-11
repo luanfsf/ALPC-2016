@@ -32,17 +32,17 @@ for i in range(5):
 
 total2 = totvarbe + totvarce
 
-print "|----------------------------------+-------|"
+print ("|----------------------------------+-------|")
 for i in range(4):
     for j in range(5):
-        print "| %4d" %(array[i][j]),
+        print ("| %4d " %(array[i][j]), end ="")
     #print "",
-    print "| = %4d|" %(varbe[i])
-print "|----------------------------------+-------|"
+    print ("| = %4d|" %(varbe[i]) )
+print ("|----------------------------------+-------|")
 
 for j in range(5):
-    print "| %4d" %(varce[j]),
-print "|       |"
-print "|------------------------------------------|"
-print "| %5d = soma dos vetores B e C           |\n| B = soma dos elementos de cada linha     |\n| C = soma do elementos de cada coluna     |" %(total2)
-print "|------------------------------------------|"
+    print ("| %4d " %(varce[j]), end="")
+print ("|       |")
+print ("|------------------------------------------|")
+print ("| %5d = soma dos vetores B e C           |\n| B = soma dos elementos de cada linha     |\n| C = soma do elementos de cada coluna     |" %(total2) )
+print ("|------------------------------------------|")
