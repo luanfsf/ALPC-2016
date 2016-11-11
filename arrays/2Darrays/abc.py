@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
-# python 2.7
+# python 3.5
 import random
 vetor = [random.randrange(1,999, 1) for i in range(20)]
 array = [[0] * 5 for i in range(4)]

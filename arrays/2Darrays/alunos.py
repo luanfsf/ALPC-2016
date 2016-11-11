@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
-# python 2.7
+# python 3.5
 import random
 
 #disciplinas = random.sample(range(250), 5)

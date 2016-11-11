@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-# python 2.7
+# encoding: utf-8
+# python 3.5
 import random
 array3x5 = [[0] * 5 for i in range(3)]
 x = 0

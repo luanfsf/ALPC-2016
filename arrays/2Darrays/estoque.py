@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
-# python 2.7
+# python 3.5
 import random
 
 array5x3 = [[-1] * 3 for i in range(5)]

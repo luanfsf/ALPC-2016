@@ -16,15 +16,15 @@ for produto in range(20):
             prodcaro = produto +1
             daloja = loja + 1
 
-print "|-------------------------------------------------|"
+print ("|-------------------------------------------------|")
 for loja in range(20):
-    print "|prod. %2d" %(loja +1),
+    print ("|prod. %2d" %(loja +1), end="")
     for produto in range(5):
-        print "| %5.2f" %(lojas[loja][produto]),
-    print "|",
-    print ""
-print "|-------------------------------------------------|"
-print "|---------| loja1 | loja2 | loja3 | loja 4| loja5 |"
-print "|-------------------------------------------------|"
-print "|O produto mais caro é o %2d da loja %2d            |" %(prodcaro, daloja)
-print "|-------------------------------------------------|"
+        print ("| %5.2f" %(lojas[loja][produto]), end="")
+    print ("|", end="")
+    print ("")
+print ("|-------------------------------------------------|")
+print ("|---------| loja1 | loja2 | loja3 | loja 4| loja5 |")
+print ("|-------------------------------------------------|")
+print ("|O produto mais caro é o %2d da loja %2d            |" %(prodcaro, daloja))
+print ("|-------------------------------------------------|")
