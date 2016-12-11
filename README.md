@@ -2,4 +2,4 @@
 
 * ALPC (algoritmos e programação de computadores) - 2016
 
-* Aplicativos em python 2.7 geralmente.
+* Aplicativos em python 3.5 geralmente, não mais disponíveis publicamente.
